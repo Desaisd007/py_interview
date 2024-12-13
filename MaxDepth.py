@@ -11,11 +11,11 @@ def height_tree(A):
     if (A == None):
         return 0
     else:
-        idepth=height_tree(A.left)
+        ldepth=height_tree(A.left)
         rdepth=height_tree(A.right)
 
-        if(idepth > rdepth):
-            return (1+idepth)
+        if(ldepth > rdepth):
+            return (1+ldepth)
         else:
             return (1+rdepth)
 
